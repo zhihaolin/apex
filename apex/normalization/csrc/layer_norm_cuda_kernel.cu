@@ -670,7 +670,7 @@ void cuda_layer_norm(
     at::Tensor* input,
     int n1,
     int n2,
-    at::IntList normalized_shape,
+    at::IntArrayRef normalized_shape,
     at::Tensor* gamma,
     at::Tensor* beta,
     double epsilon)
@@ -764,7 +764,7 @@ void cuda_layer_norm_gradient(
     at::Tensor* input,
     int n1,
     int n2,
-    at::IntList normalized_shape,
+    at::IntArrayRef normalized_shape,
     at::Tensor* gamma,
     at::Tensor* beta,
     double epsilon,
